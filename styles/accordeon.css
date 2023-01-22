@@ -1,0 +1,51 @@
+.toggle_show {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.toggle_show_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #388EC3;
+    margin: 0;
+    
+}
+
+.toggle_content {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #333E50;
+}
+
+.down_arrow {
+    padding-left: 5px;
+    width: 10px;
+    height: 10px;
+    background: url('../img/skip-track-down.svg') no-repeat center center;
+}
+
+.rotate_arrow {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+@media (min-width: 501px) {
+    .toggle_content {
+        display: none;
+    }
+    .toggle_show {
+        display: none;
+    }
+    
+}

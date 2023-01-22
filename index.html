@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="/lcdsantos-jQuery-Selectric-da2b127/selectric.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./lcdsantos-jQuery-Selectric-da2b127/js/jquery.selectric.min.js"></script>
+    <title>Облигации</title>
+</head>
+
+
+<body>
+    <div class="container_wrapper">
+        <header class="header_wrapper">
+            <div class="header_flex">
+                <div class="header_text_wrapper">
+                    <h1 class="header_wrapper__title">Облигации в России</h1>
+                    <h4 class="header_wrapper__description">Облигации федерального, субфедерального займа, еврооблигации
+                        и
+                        облигации самых известных компаний России. Изучайте стоимость облигаций и ее изменение,
+                        доходность,
+                        купонные выплаты и многие другие показатели. Чтобы узнать больше про облигации и инвестирование
+                        в ценные
+                        бумаги, посетите наш <a href="#">образовательный раздел</a> с множеством полезной информации.
+                    </h4>
+                    <div class="toggle_content">
+                        Облигации федерального, субфедерального займа, еврооблигации и облигации самых известных
+                        компаний...
+                    </div>
+                    <div class="toggle_show">
+                        <p class="toggle_show_text">Показать весь</p>
+                        <div class="down_arrow"></div>
+                    </div>
+                </div>
+                <img class="header_image_stock" loading="lazy" src="img/stock.png"/>
+            </div>
+            <div class="search_wrapper" tabindex="1" >
+                <label class="search_label">
+                    <input class="header_wrapper__input" type="text" placeholder="Название или тикер" />
+                </label>
+                <div class="search_cross hide"></div>
+            </div>
+    </div>
+    </header>
+    </div>
+    <hr class="divider" />
+    <div class="container_wrapper">
+        <div class="container_title">
+            Все об инвестициях
+        </div>
+        <div class="container_flex">
+            <div class="container_flex_row">
+                <div class="container_item_1 stoks">
+                    <div class="container_item_wrapper">
+                        <div>
+                            <h3 class="container_item_title">Акции</h3>
+                            <h5 class="container_item_description">Покупка акций российских и мировых компаний</h5>
+                        </div>
+                        <button class="primary_btn" type="button">Купить</button>
+                    </div>
+                </div>
+                <div class="container_item_2">
+                    <div class="container_item_wrapper">
+                        <div>
+                            <h3 class="container_item_title">Облигации</h3>
+                            <h5 class="container_item_description">Инвестируйте в ценные бумаги и зарабатывайте на
+                                процентах</h5>
+                        </div>
+                        <button class="primary_btn" type="button">Подобрать</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container_flex_row">
+                <div class="container_item_2">
+                    <div class="container_item_wrapper">
+                        <div>
+                            <h3 class="container_item_title">Дивиденды</h3>
+                            <h5 class="container_item_description">Размеры дивидендов и даты выплат на календаре</h5>
+                        </div>
+                        <button class="secondary_btn" type="button">Подробнее</button>
+                    </div>
+                </div>
+                <div class="container_item_1 iis">
+                    <div class="container_item_wrapper">
+                        <div>
+                            <h3 class="container_item_title">Индивидуальный инвестиционный счет</h3>
+                            <h5 class="container_item_description">Откройте счет и увеличивайте доходность своих
+                                инвестиций</h5>
+                        </div>
+                        <button class="primary_btn" type="button">Открыть ИИС</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container_flex_row">
+                <div class="container_item_3 brokers">
+                    <div class="container_item_wrapper">
+                        <div>
+                            <h3 class="container_item_title">Брокеры</h3>
+                            <h5 class="container_item_description">Инвестируйте вместе с профессионалами.</h5>
+                        </div>
+                        <button class="secondary_btn" type="button">Выбрать</button>
+                    </div>
+                </div>
+                <div class="container_item_3">
+                    <div class="container_item_wrapper">
+                        <div>
+                            <h3 class="container_item_title">Обучение</h3>
+                            <h5 class="container_item_description">Учитесь инвестировать БЕСПЛАТНО вместе с Банкирос
+                            </h5>
+                        </div>
+                        <button class="secondary_btn" type="button">Пройти обучение</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_wrapper">
+            <div class="footer_flex_row">
+                <div class="footer_item">
+                    <div class="footer_item_wrapper">
+                        <div class="footer_select">
+                            <h3 class="footer_item_title">Акции</h3>
+                            <select name="select">
+                                <option value="value1" selected>1 день</option>
+                                <option value="value2">2 дня</option>
+                            </select>
+                        </div>
+                        <div class="footer_tab">
+                            <button id="lead" class="footer_tab_lead active" type="button">Лидеры роста</button>
+                            <button id="tab" class="footer_tab_lead" type="button">Tab inactive</button>
+                        </div>
+                        <div class="footer_divider"></div>
+                    </div>
+                    <div class="footer_item_wrapper">
+                        <div class="footer_item_flex">
+                            <div class="flex_item">
+                                <div class="flex_left">
+                                    <p class="flex_text">Тикер</p>
+                                </div>
+                                <div class="flex_right">
+                                    <p class="flex_text">Посл. цена</p>
+                                    <p class="flex_text">Изм.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer_divider"></div>
+
+                        <div class="footer_item_flex">
+                            <div class="flex_item">
+                                <div class="flex_left">
+                                    <div class="flex_left_wrapper">
+                                        <img class="flex_left_image" loading="lazy" src="./img/vtb.png" />
+                                        <div>
+                                            <p class="flex_title">ВТБ банк</p>
+                                            <p class="flex_text">VTBR</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex_right">
+                                    <div class="flex_right_price">
+                                        <p class="flex_text_price">18.24 ₽</p>
+                                    </div>
+                                    <div class="flex_right_change">
+                                        <div class="flex_container">
+                                            <img style="width: 14px; height: 14px;" src="./img/arrow-up.svg">
+                                            <p class="green_text">138.75 %</p>
+                                        </div>
+                                        <p class="green_text">4.90 ₽</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="footer_divider"></div>
+
+
+                            <div class="flex_item">
+                                <div class="flex_left">
+                                    <div class="flex_left_wrapper">
+                                        <img class="flex_left_image" loading="lazy" src="./img/rusgid.png" />
+                                        <div>
+                                            <p class="flex_title">Пао «Русгидро»</p>
+                                            <p class="flex_text">HYDR</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex_right">
+                                    <div class="flex_right_price">
+                                        <p class="flex_text_price">4.90 ₽</p>
+                                    </div>
+                                    <div class="flex_right_change">
+                                        <div class="flex_container">
+                                            <img style="width: 14px; height: 14px;" src="./img/arrow-up.svg">
+                                            <p class="green_text">138.75 %</p>
+                                        </div>
+                                        <p class="green_text">4.90 ₽</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="footer_divider"></div>
+
+                            <div class="flex_item">
+                                <div class="flex_left">
+                                    <div class="flex_left_wrapper">
+                                        <img class="flex_left_image" loading="lazy" src="./img/dis.png" />
+                                        <div class="flext_left_text_wrapper">
+                                            <p class="flex_title">The Walt Disney Company</p>
+                                            <p class="flex_text">DIS-RM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex_right">
+                                    <div class="flex_right_price">
+                                        <p class="flex_text_price">54.23 $</p>
+                                    </div>
+                                    <div class="flex_right_change">
+                                        <div class="flex_container">
+                                            <img style="width: 14px; height: 14px;" src="./img/arrowdown.png">
+                                            <p class="red_text">138.75 %</p>
+                                        </div>
+                                        <p class="red_text">4.90 ₽</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="footer_divider"></div>
+
+                            <div class="flex_item">
+                                <div class="flex_left">
+                                    <div class="flex_left_wrapper">
+                                        <img class="flex_left_image" loading="lazy" src="./img/gaz.png" />
+                                        <div class="flext_left_text_wrapper">
+                                            <p class="flex_title">Газпром</p>
+                                            <p class="flex_text">GAZP</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex_right">
+                                    <div class="flex_right_price">
+                                        <p class="flex_text_price">14.36 ₽</p>
+                                    </div>
+                                    <div class="flex_right_change">
+                                        <div class="flex_container">
+                                            <img style="width: 14px; height: 14px;" src="./img/arrowdown.png">
+                                            <p class="red_text">138.75 %</p>
+                                        </div>
+                                        <p class="red_text">4.90 ₽</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="footer_divider"></div>
+
+                            <div class="flex_item">
+                                <div class="flex_left">
+                                    <div class="flex_left_wrapper">
+                                        <img class="flex_left_image" loading="lazy" src="./img/rusgid.png" />
+                                        <div class="flext_left_text_wrapper">
+                                            <p class="flex_title">The Walt Disney Company</p>
+                                            <p class="flex_text">DIS-RM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex_right">
+                                    <div class="flex_right_price">
+                                        <p class="flex_text_price">9.24 ₽</p>
+                                    </div>
+                                    <div class="flex_right_change">
+                                        <div class="flex_container">
+                                            <img style="width: 14px; height: 14px;" src="./img/arrow-up.svg">
+                                            <p class="green_text">138.75 %</p>
+                                        </div>
+                                        <p class="green_text">4.90 ₽</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="footer_divider"></div>
+
+                            <div class="flex_item">
+                                <div class="flex_left">
+                                    <div class="flex_left_wrapper">
+                                        <img class="flex_left_image" loading="lazy" src="./img/cis.png" />
+                                        <div class="flext_left_text_wrapper">
+                                            <p class="flex_title">Cisco Systems, Inc.</p>
+                                            <p class="flex_text">CSCO-RM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex_right">
+                                    <div class="flex_right_price">
+                                        <p class="flex_text_price">18.24 ₽</p>
+                                    </div>
+                                    <div class="flex_right_change">
+                                        <div class="flex_container">
+                                            <img style="width: 14px; height: 14px;" src="./img/arrow-up.svg">
+                                            <p class="green_text">138.75 %</p>
+                                        </div>
+                                        <p class="green_text">4.90 ₽</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="footer_divider"></div>
+
+                            <div class="footer_flex">
+                                <a href="#">Больше лидеров роста <img src="./img/skip-track-right.png" /></a>
+                                <div class="footer_text">Обновлено в 12:30</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calendar -->
+
+                <div class="footer_item">
+                    <div class="footer_item_wrapper">
+                        <div>
+                            <h3 class="footer_item_title">Экономический календарь</h3>
+                        </div>
+                        <p style="margin: 20px 0 12px 0;" class="flex_text">Ноябрь 17</p>
+                        <div class="footer_divider"></div>
+                        <div class="footer_calendar_item">
+                            <div class="calendar_time time_border">13:00</div>
+                            <div class="calendar_flag">
+                                <img src="./img/russia.png" loading="lazy" alt="russia">
+                            </div>
+                            <div class="calendar_flag"> <img src="./img/red_dot.png" loading="lazy" alt="dot">
+                            </div>
+                            <div class="calendar_text">Индекс цен на продовольствие</div>
+                        </div>
+                        <div class="footer_divider"></div>
+
+
+                        <div class="footer_calendar_item">
+                            <div class="calendar_time time_border">13:00</div>
+                            <div class="calendar_flag">
+                                <img src="./img/russia.png" loading="lazy" alt="russia">
+                            </div>
+                            <div class="calendar_flag"> <img src="./img/red_dot.png" loading="lazy" alt="dot">
+                            </div>
+                            <div class="calendar_text">Employment Overall Flash</div>
+                        </div>
+                        <div class="footer_divider"></div>
+
+
+                        <div class="footer_calendar_item">
+                            <div class="calendar_time ">16:45</div>
+                            <div class="calendar_flag">
+                                <img src="./img/united-states-of-america.png" loading="lazy" alt="usa">
+                            </div>
+                            <div class="calendar_flag"> <img src="./img/yellow_dot.png" loading="lazy" alt="dot">
+                            </div>
+                            <div class="calendar_text">Изменение занятости (кв/кв)</div>
+                        </div>
+                        <div class="footer_divider"></div>
+
+
+                        <div class="footer_calendar_item">
+                            <div class="calendar_time">23:15</div>
+                            <div class="calendar_flag">
+                                <img src="./img/united-states-of-america.png" loading="lazy" alt="usa">
+                            </div>
+                            <div class="calendar_flag"> <img src="./img/yellow_dot.png" loading="lazy" alt="dot">
+                            </div>
+                            <div class="calendar_text">Изменение занятости (кв/кв), ИПЦ Франции, базовый индекс цен
+                                производителей (PPI) (г/г) (окт) </div>
+                        </div>
+                        <div class="footer_divider"></div>
+
+                        <p style="margin: 20px 0 12px 0;" class="flex_text">Ноябрь 18</p>
+                        <div class="footer_divider"></div>
+
+
+                        <div class="footer_calendar_item">
+                            <div class="calendar_time ">09:00</div>
+                            <div class="calendar_flag">
+                                <img src="./img/united-states-of-america.png" loading="lazy" alt="usa">
+                            </div>
+                            <div class="calendar_flag"> <img src="./img/yellow_dot.png" loading="lazy" alt="dot">
+                            </div>
+                            <div class="calendar_text">ИПЦ Франции</div>
+                        </div>
+                        <div class="footer_divider"></div>
+
+                        <div class="footer_calendar_item">
+                            <div class="calendar_time">14:40</div>
+                            <div class="calendar_flag">
+                                <img src="./img/russia.png" loading="lazy" alt="russia">
+                            </div>
+                            <div class="calendar_flag"> <img src="./img/red_dot.png" loading="lazy" alt="dot">
+                            </div>
+                            <div class="calendar_text">PPI exFood/Energy MM</div>
+                        </div>
+                        <div class="footer_divider"></div>
+
+
+                        <div class="footer_calendar_item">
+                            <div class="calendar_time">16:45</div>
+                            <div class="calendar_flag">
+                                <img src="./img/russia.png" loading="lazy" alt="russia">
+                            </div>
+                            <div class="calendar_flag"> <img src="./img/green_dot.png" loading="lazy" alt="dot">
+                            </div>
+                            <div class="calendar_text">Речь члена FOMC Уильямса </div>
+                        </div>
+                        <div class="footer_divider"></div>
+
+                        <div class="footer_calendar_item">
+                            <div class="calendar_time ">16:45</div>
+                            <div class="calendar_flag">
+                                <img src="./img/united-states-of-america.png" loading="lazy" alt="usa">
+                            </div>
+                            <div class="calendar_flag"> <img src="./img/yellow_dot.png" loading="lazy" alt="dot">
+                            </div>
+                            <div class="calendar_text">Базовый индекс цен производителей (PPI) (г/г) (окт) </div>
+                        </div>
+                        <div class="footer_divider"></div>
+                        <div class="footer_flex margin">
+                            <a href="#">Больше событий<img src="./img/skip-track-right.png" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
